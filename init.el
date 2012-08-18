@@ -7,16 +7,18 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/local"))
 
 
+;; Load third-party plugins.  This has to come first because other
+;; things depend on libraries being there.
+(require 'plugins)
+(package-initialize)
+
+
+;; Load all of my local settings.
 (require 'appearance)
 (require 'interaction)
 (require 'keybindings)
-(require 'plugins)
 (require 'programming)
 (require 'utilities)
-
-
-;; Use package
-(package-initialize)
 
 
 ;; Start emacs server
