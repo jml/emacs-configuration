@@ -1,0 +1,5 @@
+auto-save-list
+.emacs.desktop
+elpa
+session*
+swank
