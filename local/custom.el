@@ -1,12 +1,14 @@
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(Buffer-menu-use-header-line nil)
  '(TeX-shell "bash" t)
  '(TeX-view-style (quote (("^a4\\(?:dutch\\|paper\\|wide\\)?\\|sem-a4$" "xdvi %d -paper a4") ("^a5\\(?:comb\\|paper\\)?$" "xdvi %d -paper a5") ("^b5paper$" "xdvi %d -paper b5") ("^letterpaper$" "xdvi %d -paper us") ("^legalpaper$" "xdvi %d -paper legal") ("^executivepaper$" "xdvi %d -paper 7.25x10.5in") ("^landscape$" "xdvi %d -paper a4r -s 4") ("." "xdvi %d -paper a4"))))
+ '(ansi-color-names-vector ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
+ '(auto-mode-case-fold nil)
  '(auto-save-list-file-prefix "~/.emacs.d/auto-save-list/.saves-")
  '(backup-by-copying-when-linked t)
  '(bbdb-check-zip-codes-p nil)
@@ -18,8 +20,10 @@
  '(column-number-mode t)
  '(compilation-mode-hook (quote ((lambda nil (toggle-truncate-lines nil)))))
  '(compilation-scroll-output t)
+ '(completion-cycle-threshold 5)
  '(current-language-environment "English")
  '(custom-buffer-indent 4)
+ '(custom-safe-themes (quote ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "72cc9ae08503b8e977801c6d6ec17043b55313cda34bcf0e6921f2f04cf2da56" "30fe7e72186c728bd7c3e1b8d67bc10b846119c45a0f35c972ed427c45bacc19" "21d9280256d9d3cf79cbcf62c3e7f3f243209e6251b215aede5026e0c5ad853f" "71b172ea4aad108801421cc5251edb6c792f3adbaecfa1c52e94e3d99634dee7" "5e1d1564b6a2435a2054aa345e81c89539a72c4cad8536cfe02583e0b7d5e2fa" "71efabb175ea1cf5c9768f10dad62bb2606f41d110152f4ace675325d28df8bd" "de58ec8c52e1bba7d46f627c57d0f1a364df9b1e92e45156e5d04d3cec2531d6" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
  '(dabbrev-case-distinction nil)
  '(dabbrev-case-fold-search nil)
  '(dabbrev-case-replace nil)
@@ -33,7 +37,7 @@
  '(exec-path (quote ("/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin" "/usr/local/bin")))
  '(find-file-existing-other-name nil)
  '(flymake-log-level -1)
- '(global-font-lock-mode t nil (font-lock))
+ '(global-font-lock-mode t)
  '(grep-template "grep <C> -I -nH -e <R> <F>")
  '(gutter-buffers-tab-visible-p nil)
  '(haskell-program-name "ghci \"+.\"")
@@ -45,11 +49,9 @@
  '(line-number-mode t)
  '(mail-envelope-from (quote header))
  '(mail-specify-envelope-from t)
- '(menu-bar-mode nil nil (menu-bar))
+ '(markdown-indent-on-enter t)
+ '(menu-bar-mode nil)
  '(message-sendmail-envelope-from (quote header))
- '(notmuch-address-command "/home/jml/bin/google-contact")
- '(notmuch-fcc-dirs "[Gmail].Sent Mail")
- '(notmuch-search-oldest-first nil)
  '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Waiting For" todo "WF") ("i" "In progress" todo "INPROGRESS"))))
  '(org-agenda-dim-blocked-tasks (quote invisible))
  '(org-agenda-files (quote ("~/Dropbox/Organize/ACTIONS")))
@@ -70,13 +72,13 @@
  '(paren-mode (quote paren) nil (paren))
  '(php-mode-speedbar-open nil)
  '(pop-up-windows nil)
- '(ps-default-bg "white")
  '(query-user-mail-address nil t)
  '(require-final-newline t)
  '(safe-local-variable-values (quote ((test-case-name . twisted\.trial\.test\.test_runner) (encoding . utf8) (encoding . utf-8))))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 100000)
  '(scroll-down-aggressively nil)
+ '(scroll-error-top-bottom t)
  '(scroll-step 0)
  '(scroll-up-aggressively nil)
  '(scrollbars-visible-p nil)
@@ -106,29 +108,18 @@
  '(wiki-follow-name-action (quote find-file))
  '(wiki-name-regexp "\\<[A-Z][a-z]+\\([A-Z][a-z]+\\)+\\>")
  '(x-select-enable-clipboard t))
-
-
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :family "Ubuntu Mono"))))
- '(dired-directory ((t (:foreground "blue" :weight bold))))
- '(flymake-errline ((((class color) (background light)) (:underline "red"))))
- '(font-lock-builtin-face ((((class color) (min-colors 88) (background light)) (:foreground "darkred" :weight bold))))
- '(font-lock-comment-face ((((class color) (min-colors 88) (background light)) (:foreground "#007070" :slant italic))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:height 120 :foundry "unknown" :family "Ubuntu Mono"))))
+ '(dired-directory ((t (:weight bold))) t)
+ '(font-lock-builtin-face ((t (:weight bold))))
+ '(font-lock-comment-face ((t (:slant italic))))
  '(font-lock-doc-face ((t (:inherit font-lock-comment-face))))
- '(font-lock-function-name-face ((((class color) (min-colors 88) (background light)) (:foreground "blue" :weight bold))))
- '(font-lock-keyword-face ((((class color) (min-colors 88) (background light)) (:weight bold))))
- '(font-lock-string-face ((((class color) (min-colors 88) (background light)) (:foreground "#007070"))))
- '(font-lock-type-face ((((class color) (min-colors 88) (background light)) (:foreground "red" :weight bold))))
- '(font-lock-variable-name-face ((((class color) (min-colors 88) (background light)) (:foreground "red"))))
- '(font-lock-warning-face ((((class color) (min-colors 88) (background light)) (:background "red"))))
- '(org-headline-done ((((class color) (min-colors 16) (background light)) (:foreground "ForestGreen" :strike-through t))))
- '(org-level-1 ((((class color) (background light)) (:weight bold :height 1.5))))
- '(org-level-2 ((((class color) (background light)) nil)))
- '(org-level-3 ((((class color) (background light)) nil)))
- '(py-builtins-face ((t (:inherit font-lock-builtin-face))))
- '(py-decorators-face ((t (:foreground "red" :weight bold))))
- '(py-pseudo-keyword-face ((t (:inherit font-lock-keyword-face)))))
+ '(font-lock-function-name-face ((t (:weight bold))))
+ '(font-lock-keyword-face ((t (:weight bold))))
+ '(font-lock-type-face ((t (:weight bold))))
+ '(org-headline-done ((t (:strike-through t))) t)
+ '(org-level-1 ((t (:weight bold :height 1.5))) t))
