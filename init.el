@@ -9,7 +9,6 @@
 
 ;; Load third-party plugins.  This has to come first because other
 ;; things depend on libraries being there.
-(require 'plugins)
 (package-initialize)
 
 
