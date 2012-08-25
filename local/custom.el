@@ -74,6 +74,7 @@
  '(pop-up-windows nil)
  '(query-user-mail-address nil t)
  '(require-final-newline t)
+ '(rst-level-face-base-light 30)
  '(safe-local-variable-values (quote ((test-case-name . twisted\.trial\.test\.test_runner) (encoding . utf8) (encoding . utf-8))))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 100000)
