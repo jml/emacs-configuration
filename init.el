@@ -11,6 +11,10 @@
 ;; things depend on libraries being there.
 (package-initialize)
 
+;; Load manually-managed third-party plugins.
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins"))
+(require 'edit-server)
+
 
 ;; Load all of my local settings.
 (require 'appearance)
@@ -22,3 +26,6 @@
 
 ;; Start emacs server
 (server-start)
+
+;; Start edit server (for Chrome integration)
+(edit-server-start)
