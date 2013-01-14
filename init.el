@@ -1,12 +1,3 @@
-;; Customize
-(setq custom-file "~/.emacs.d/local/custom.el")
-(load custom-file)
-
-
-;; Configure load path for local settings.
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/local"))
-
-
 ;; Load third-party plugins.  This has to come first because other
 ;; things depend on libraries being there.
 (package-initialize)
@@ -14,6 +5,16 @@
 ;; Load manually-managed third-party plugins.
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins"))
 (require 'edit-server)
+
+
+
+;; Customize
+(setq custom-file "~/.emacs.d/local/custom.el")
+(load custom-file)
+
+
+;; Configure load path for local settings.
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/local"))
 
 
 ;; Load all of my local settings.
