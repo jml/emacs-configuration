@@ -68,7 +68,7 @@
  '(org-modules (quote (org-bbdb org-bibtex org-docview org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m)))
  '(org-startup-indented t)
  '(org-stuck-projects (quote ("/-DONE" ("TODO" "AGENDA") nil "")))
- '(org-todo-keywords (quote ((sequence "TODO" "INPROGRESS" "|" "WF" "DONE" "CANCELLED") (sequence))))
+ '(org-todo-keywords (quote ((sequence "TODO(t)" "NEXT(n)" "INPROGRESS(i)" "WF(w)" "BLOCKED(b)" "|" "DONE(d)" "CANCELLED(c)") (sequence))))
  '(org-use-fast-todo-selection t)
  '(org-wikinodes-scope (quote directory))
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://melpa.milkbox.net/packages/"))))
