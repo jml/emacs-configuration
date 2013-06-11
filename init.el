@@ -23,10 +23,3 @@
 (require 'keybindings)
 (require 'programming)
 (require 'utilities)
-
-
-;; Start emacs server
-(server-start)
-
-;; Start edit server (for Chrome integration)
-(edit-server-start)
