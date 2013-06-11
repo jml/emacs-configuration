@@ -30,6 +30,7 @@
  '(dabbrev-upcase-means-case-search t)
  '(desktop-base-file-name ".emacs.d/.emacs.desktop")
  '(desktop-base-lock-name ".emacs.d/.emacs.desktop.lock")
+ '(desktop-load-locked-desktop t)
  '(desktop-save-mode t)
  '(dvc-tips-enabled nil)
  '(ess-display-buffer-reuse-frames nil)
