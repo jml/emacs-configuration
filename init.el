@@ -4,7 +4,6 @@
 
 ;; Load manually-managed third-party plugins.
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins"))
-(require 'edit-server)
 
 
 
