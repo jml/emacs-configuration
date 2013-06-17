@@ -59,7 +59,7 @@
  '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Waiting For" todo "WF") ("i" "In progress" todo "INPROGRESS"))))
  '(org-agenda-dim-blocked-tasks (quote invisible))
  '(org-agenda-files (quote ("/home/jml/Google Drive/Organize/PERSONAL")))
- '(org-archive-location "~/Google Drive/Organize/DONE::")
+ '(org-archive-location "%s_archive::datetree/*")
  '(org-archive-reversed-order t)
  '(org-archive-save-context-info (quote (time file category todo itags)))
  '(org-completion-use-iswitchb t)
