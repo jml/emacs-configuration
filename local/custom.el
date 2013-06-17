@@ -34,7 +34,7 @@
  '(desktop-save-mode t)
  '(dvc-tips-enabled nil)
  '(ess-display-buffer-reuse-frames nil)
- '(ess-language "R")
+ '(ess-language "R" t)
  '(exec-path (quote ("/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin" "/usr/local/bin")))
  '(find-file-existing-other-name nil)
  '(flymake-allowed-file-name-masks (quote (("\\.tac\\'" flymake-pyflakes-init) ("\\.py\\'" flymake-pyflakes-init))))
