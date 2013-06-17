@@ -9,3 +9,9 @@
 (global-set-key "\M-p" 'scroll-down-line)
 (global-set-key (kbd "C-x t") 'todotxt)
 (global-set-key (kbd "\C-c g") 'magit-status)
+
+
+
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries 'org-archive-subtree "TODO=\"DONE\"|TODO=\"CANCELLED\"" 'file))
