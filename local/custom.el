@@ -11,6 +11,7 @@
  '(auto-mode-case-fold nil)
  '(auto-save-list-file-prefix "~/.emacs.d/auto-save-list/.saves-")
  '(backup-by-copying-when-linked t)
+ '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
  '(bbdb-check-zip-codes-p nil)
  '(bbdb-default-country "UK")
  '(bbdb-north-american-phone-numbers-p nil)
