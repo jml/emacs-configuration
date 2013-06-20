@@ -5,3 +5,5 @@ elpa
 session*
 swank
 url/
+backups/
+private/
