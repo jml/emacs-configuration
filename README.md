@@ -17,20 +17,24 @@ Anyway, if you can figure it out I'd really appreciate it if you could give me
 a hint or something because I'm lost.
 
 
+## Packages that must be installed to make this work
+
+* monokai-theme
+* clojure-mode
+
 ## Packages I've installed
 
-* ess
-* haskell-mode
 * json
-* magit
-* magit-gh-pulls
-* magithub
-* markdown-mode
 * monokai-theme
 * nrepl
-* org
 * paredit
 * puppet-mode
 * rainbow-mode
 * yaml-mode
 * yasnippet
+* haskell-mode
+* magit
+* ess
+* markdown-mode
+* magit-gh-pulls
+* org

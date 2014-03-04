@@ -12,8 +12,12 @@
 (add-hook 'after-make-frame-functions 'blackout-on-tty)
 
 ;; Customize
-(setq custom-file "~/.emacs.d/local/custom.el")
+(setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
+
+(require 'load-directory)
+
+(load-directory (expand-file-name "~/.emacs.d/config.d"))
 
 
 ;; Configure load path for local settings.
@@ -21,8 +25,5 @@
 
 
 ;; Load all of my local settings.
-(require 'appearance)
-(require 'interaction)
-(require 'keybindings)
 (require 'programming)
 (require 'utilities)

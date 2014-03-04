@@ -1,5 +1,3 @@
-(provide 'interaction)
-
 ;; Make all "yes or no" prompts "y or n"
 (fset 'yes-or-no-p 'y-or-n-p)
 
