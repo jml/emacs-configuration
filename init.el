@@ -18,12 +18,3 @@
 (require 'load-directory)
 
 (load-directory (expand-file-name "~/.emacs.d/config.d"))
-
-
-;; Configure load path for local settings.
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/local"))
-
-
-;; Load all of my local settings.
-(require 'programming)
-(require 'utilities)
