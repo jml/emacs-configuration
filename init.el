@@ -16,6 +16,13 @@
 (load custom-file)
 
 
+(setq temporary-file-directory "~/.emacs.d/temp")
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+
 ;; Configure load path for local settings.
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/local"))
 
@@ -26,3 +33,10 @@
 (require 'keybindings)
 (require 'programming)
 (require 'utilities)
+
+
+(add-to-list 'load-path (expand-file-name "~/src/google-emacs/elisp"))
+
+(require 'google)
+(remove-hook 'find-file-hooks 'p4-find-file-hook)
+(remove-hook 'find-file-hooks 'google-load-p4-if-useful-hook)
