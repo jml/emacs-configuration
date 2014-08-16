@@ -14,8 +14,9 @@
 ;;   (add-to-list 'flymake-allowed-file-name-masks
 ;;                '("\\.tac\\'" flymake-pyflakes-init)))
 
-(require 'flymake-python-pyflakes)
-(setq flymake-python-pyflakes-executable "//anaconda/bin/pyflakes")
-(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+;(require 'flymake-python-pyflakes)
+;(setq flymake-python-pyflakes-executable "//anaconda/bin/pyflakes")
+;(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
-(setq auto-mode-alist (cons '("\\.tac$" . python-mode) auto-mode-alist))
+;(setq auto-mode-alist (cons '("\\.tac$" . python-mode) auto-mode-alist))
+
