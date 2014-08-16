@@ -7,3 +7,5 @@ swank
 url/
 backups/
 *~
+/local.d/*
+!/local.d/README.md

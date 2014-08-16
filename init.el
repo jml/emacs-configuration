@@ -1,5 +1,6 @@
 ;; Load third-party plugins.  This has to come first because other
 ;; things depend on libraries being there.
+
 (package-initialize)
 
 ;; Load manually-managed third-party plugins.
@@ -17,4 +18,8 @@
 
 (require 'load-directory)
 
+;; Configuration that's appropriate in all the places I use Emacs.
 (load-directory (expand-file-name "~/.emacs.d/config.d"))
+
+;; Configuration that's only appropriate in this installation.
+(load-directory (expand-file-name "~/.emacs.d/local.d"))
