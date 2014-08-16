@@ -8,7 +8,8 @@ url/
 backups/
 private/
 tramp
-temp
+/temp/*
+!/temp/README.md
 /#!home!tusk!secure!projects.org#
 /#_ascpc_bhippo.lon_b_ausr_alocal_agoogle_ahome_atusk_asrc_aasfe_agoogle3_aads_aproduction_afrontend_ajob__config_ajob__config__test.py#
 *~
