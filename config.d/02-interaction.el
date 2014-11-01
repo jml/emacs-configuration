@@ -7,9 +7,6 @@
 ;; Fill width
 (setq-default fill-column 78)
 
-;; Use iswitchb for awesome tab completing buffer names
-(iswitchb-mode)
-
 ;; I don't use Firefox, I use Chrome.
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
@@ -18,9 +15,6 @@
 
 ;; Load dired-x.
 (add-hook 'dired-load-hook (lambda () (load "dired-x")))
-
-;; Text mode is the default
-(setq default-major-mode 'text-mode)
 
 ;; Sign messages by default.
 (add-hook 'message-setup-hook 'mml-secure-sign-pgpmime)
