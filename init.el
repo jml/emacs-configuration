@@ -3,10 +3,9 @@
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
-
 (pallet-mode t)
+(require 'req-package)
 
-(package-initialize)
 
 ;; Load manually-managed third-party plugins.
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins"))

@@ -2,8 +2,8 @@
 (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-m" 'newline-and-indent) ;; enter key indents
 (global-set-key "\M-j" (lambda () (interactive) (delete-indentation 1)))
-(global-set-key "\C-x\C-b" 'ibuffer-other-window)
 (global-set-key "\M-n" 'scroll-up-line)
 (global-set-key "\M-p" 'scroll-down-line)
-(global-set-key (kbd "C-x t") 'todotxt)
+
+;; TODO: Wrap in req-package
 (global-set-key (kbd "C-c g g") 'magit-status)

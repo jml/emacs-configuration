@@ -1,5 +1,6 @@
+(source "melpa" "http://melpa.milkbox.net/packages/")
 (source gnu)
-(source melpa)
+(source marmalade)
 
 (depends-on "bind-key")
 (depends-on "cask")
@@ -22,6 +23,7 @@
 (depends-on "noctilux-theme")
 (depends-on "nyan-mode")
 (depends-on "pallet")
+(depends-on "paradox")
 (depends-on "paredit")
 (depends-on "popwin")
 (depends-on "prodigy")

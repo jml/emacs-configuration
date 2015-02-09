@@ -1,3 +1,5 @@
+
+;; TODO: Wrap in req-package
 (require 'markdown-mode)
 
 (setq auto-mode-alist (cons '("\\.text" . markdown-mode) auto-mode-alist))

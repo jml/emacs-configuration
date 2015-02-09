@@ -1,5 +1,6 @@
 ;; Enable flycheck globally
 
+;; TODO: Wrap in req-package
 (eval-after-load 'flycheck
   '(progn
      (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
