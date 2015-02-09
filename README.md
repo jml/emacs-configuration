@@ -16,25 +16,15 @@ Catchy, no?
 Anyway, if you can figure it out I'd really appreciate it if you could give me
 a hint or something because I'm lost.
 
+## Things to look into
 
-## Packages that must be installed to make this work
+* elpy
+* company
+* god-mode
+* YouCompleteMe for Emacs
+* popwin
+* make yasnippet config much better
+* wrap things in req-package
 
-* monokai-theme
-* clojure-mode
-
-## Packages I've installed
-
-* json
-* monokai-theme
-* nrepl
-* paredit
-* puppet-mode
-* rainbow-mode
-* yaml-mode
-* yasnippet
-* haskell-mode
-* magit
-* ess
-* markdown-mode
-* magit-gh-pulls
-* org
+[washort's emacs config](https://github.com/washort/dotfiles/blob/master/emacs.d/emacs-init.org)
+is a source of inspiration.
