@@ -1,6 +1,11 @@
 ;; Load third-party plugins.  This has to come first because other
 ;; things depend on libraries being there.
 
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+(pallet-mode t)
+
 (package-initialize)
 
 ;; Load manually-managed third-party plugins.

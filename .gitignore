@@ -16,3 +16,4 @@ tramp
 /local.d/*
 !/local.d/README.md
 
+/.cask/
