@@ -16,7 +16,6 @@
 
 (put 'narrow-to-region 'disabled nil)
 
-;; TODO: Wrap in req-package
 ;; Load dired-x.
 (add-hook 'dired-load-hook (lambda () (load "dired-x")))
 

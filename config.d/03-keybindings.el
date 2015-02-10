@@ -5,5 +5,6 @@
 (global-set-key "\M-n" 'scroll-up-line)
 (global-set-key "\M-p" 'scroll-down-line)
 
-;; TODO: Wrap in req-package
-(global-set-key (kbd "C-c g g") 'magit-status)
+(req-package magit
+  :bind (("\C-c g g" . magit-status)
+         ("<f12>" . magit-status)))

@@ -28,3 +28,5 @@
 
 ;; Configuration that's only appropriate in this installation.
 (load-directory (expand-file-name "~/.emacs.d/local.d"))
+
+(req-package-finish)
