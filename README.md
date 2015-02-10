@@ -18,13 +18,24 @@ a hint or something because I'm lost.
 
 ## Things to look into
 
-* elpy
+* elpy / pyvenv
 * company
 * god-mode
 * YouCompleteMe for Emacs
 * popwin
 * make yasnippet config much better
-* wrap things in req-package
+* more structured way of OS-specific & site-specific configuration
+* markdown-mode that's based on [CommonMark](http://commonmark.org/)
+* various code search facilities
+  * git grep
+  * ag / ack
+  * tags
+* Python flycheck isn't as check-y as it might be
+* Try out multiple-cursors (see
+[hawkowl's gist](https://gist.github.com/hawkowl/5a9c4e74638b05b3a1d9))
+* github gist support
+* explore richer helm configuration
+  [washort](https://github.com/washort/dotfiles/blob/master/emacs.d/emacs-init.org#helm)
 
 [washort's emacs config](https://github.com/washort/dotfiles/blob/master/emacs.d/emacs-init.org)
 is a source of inspiration.
