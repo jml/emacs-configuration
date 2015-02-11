@@ -20,7 +20,6 @@ a hint or something because I'm lost.
 
 * elpy / pyvenv
 * company
-* god-mode
 * YouCompleteMe for Emacs
 * popwin
 * make yasnippet config much better

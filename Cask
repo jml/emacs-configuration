@@ -14,6 +14,8 @@
 (depends-on "flycheck-cask")
 (depends-on "flycheck-haskell")
 (depends-on "flycheck-rust")
+(depends-on "god-mode")
+(depends-on "haskell-mode")
 (depends-on "helm")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
