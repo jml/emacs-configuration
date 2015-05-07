@@ -55,7 +55,7 @@
  '(gutter-buffers-tab-visible-p nil)
  '(haskell-mode-hook
    (quote
-    (turn-on-haskell-decl-scan turn-on-haskell-doc turn-on-haskell-indentation)))
+    (turn-on-haskell-decl-scan turn-on-haskell-doc turn-on-haskell-indentation)) t)
  '(haskell-program-name "ghci \"+.\"")
  '(highlight-beyond-fill-column-in-modes (quote ("python-mode")))
  '(indent-tabs-mode nil)
@@ -124,7 +124,9 @@
  '(rst-level-face-base-light 30)
  '(safe-local-variable-values
    (quote
-    ((whitespace-style face tabs spaces trailing lines space-before-tab::space newline indentation::space empty space-after-tab::space space-mark tab-mark newline-mark)
+    ((haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 4)
+     (whitespace-style face tabs spaces trailing lines space-before-tab::space newline indentation::space empty space-after-tab::space space-mark tab-mark newline-mark)
      (test-case-name . twisted\.trial\.test\.test_runner)
      (encoding . utf8)
      (encoding . utf-8))))
