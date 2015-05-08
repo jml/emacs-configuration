@@ -17,3 +17,4 @@ tramp
 !/local.d/README.md
 
 /.cask/
+/projectile-bookmarks.eld

@@ -4,7 +4,3 @@
 (global-set-key "\M-j" (lambda () (interactive) (delete-indentation 1)))
 (global-set-key "\M-n" 'scroll-up-line)
 (global-set-key "\M-p" 'scroll-down-line)
-
-(req-package magit
-  :bind (("\C-c g g" . magit-status)
-         ("<f12>" . magit-status)))
