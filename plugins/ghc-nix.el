@@ -8,14 +8,27 @@
 (defun refresh-nix-package-databases ()
   "Update .dir-locals.el to have correct package databases for nix."
   (interactive)
-  (add-dir-local-variable nil 'flycheck-ghc-package-databases (nix-package-databases)))
+  (add-dir-local-variable 'haskell-mode 'flycheck-ghc-package-databases (nix-package-databases))
+  (add-dir-local-variable 'haskell-mode 'flycheck-haskell-ghc-executable (nix-ghc-executable)))
 
 (defun nix-package-databases ()
   "Return a list of ghc package databases under nix."
+  (-find-package-databases (-run-nix-command "ghc-pkg list")))
+
+(defun nix-ghc-executable ()
+  "Return the path to the ghc executable inside the nix-shell."
+  (-chomp-end (-run-nix-command "which ghc")))
+
+(defun -run-nix-command (command)
+  "Run COMMAND inside a nix-shell, returning output."
   (let ((default-directory (locate-dominating-file default-directory "shell.nix")))
-    (-find-package-databases
-     ;; XXX: Use `nix-shell --run' when we've finished upgrading.
-     (shell-command-to-string "nix-shell --command \"ghc-pkg list\""))))
+    (shell-command-to-string (-get-nix-command command))))
+
+(defun -get-nix-command (command)
+  "Get the command to run COMMAND inside a nix-shell."
+  (combine-and-quote-strings `("nix-shell" "--run" ,command)))
+
+
 
 
 
@@ -47,6 +60,12 @@ If not a package database, return nil."
   "Map F over XS, discarding when f(x) is nil."
   (delq nil (mapcar f xs)))
 
+
+(defun -chomp-end (str)
+  "Chomp tailing whitespace from STR."
+  (replace-regexp-in-string (rx (* (any " \t\n")) eos)
+                            ""
+                            str))
 
 
 (provide 'ghc-nix)
