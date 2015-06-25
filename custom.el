@@ -59,7 +59,6 @@
  '(haskell-program-name "ghci \"+.\"")
  '(highlight-beyond-fill-column-in-modes (quote ("python-mode")))
  '(indent-tabs-mode nil)
- '(initial-major-mode (quote text-mode))
  '(initial-scratch-message nil)
  '(kill-whole-line nil)
  '(line-number-mode t)
