@@ -14,6 +14,7 @@
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
 (depends-on "flycheck-haskell")
+(depends-on "flycheck-pyflakes")
 (depends-on "flycheck-rust")
 (depends-on "git-commit-mode")
 (depends-on "haskell-mode")
