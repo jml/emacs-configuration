@@ -1,5 +1,3 @@
-
-
 (req-package projectile
   :require (helm-projectile helm-ag)
   :bind (("C-c h" . helm-projectile))
