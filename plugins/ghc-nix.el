@@ -14,8 +14,13 @@
 (defun use-nix-ghc-in-flycheck ()
   "Configure the current buffer to use ghc provided by the containing nix shell."
   (interactive)
+  ;; Only set these variables if we detect that we're under a shell.nix
   (if (locate-dominating-file default-directory "shell.nix")
       (progn
+        ;; If we have shell.nix, we don't want to even bother with stack, at
+        ;; least, not until stack sorts out its ghc 8.0 support.
+        (add-to-list 'flycheck-disabled-checkers 'haskell-stack-ghc)
+        ;; Setting package databases to nil seems to DTRT on ghc 8.0
         (setq flycheck-ghc-package-databases nil)
         (setq flycheck-haskell-ghc-executable (nix-ghc-executable))) nil))
 
