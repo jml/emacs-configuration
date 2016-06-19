@@ -41,7 +41,7 @@
  '(custom-buffer-indent 4)
  '(custom-safe-themes
    (quote
-    ("3b24f986084001ae46aa29ca791d2bc7f005c5c939646d2b800143526ab4d323" "26614652a4b3515b4bbbb9828d71e206cc249b67c9142c06239ed3418eff95e2" "fe243221e262fe5144e89bb5025e7848cd9fb857ff5b2d8447d115e58fede8f7" "62408b3adcd05f887b6357e5bd9221652984a389e9b015f87bbc596aba62ba48" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "73fe242ddbaf2b985689e6ec12e29fab2ecd59f765453ad0e93bc502e6e478d6" "3c708b84612872e720796ea1b069cf3c8b3e909a2e1da04131f40e307605b7f9" "e16a771a13a202ee6e276d06098bc77f008b73bbac4d526f160faa2d76c1dd0e" "68769179097d800e415631967544f8b2001dae07972939446e21438b1010748c" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "72cc9ae08503b8e977801c6d6ec17043b55313cda34bcf0e6921f2f04cf2da56" "30fe7e72186c728bd7c3e1b8d67bc10b846119c45a0f35c972ed427c45bacc19" "21d9280256d9d3cf79cbcf62c3e7f3f243209e6251b215aede5026e0c5ad853f" "71b172ea4aad108801421cc5251edb6c792f3adbaecfa1c52e94e3d99634dee7" "5e1d1564b6a2435a2054aa345e81c89539a72c4cad8536cfe02583e0b7d5e2fa" "71efabb175ea1cf5c9768f10dad62bb2606f41d110152f4ace675325d28df8bd" "de58ec8c52e1bba7d46f627c57d0f1a364df9b1e92e45156e5d04d3cec2531d6" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "3b24f986084001ae46aa29ca791d2bc7f005c5c939646d2b800143526ab4d323" "26614652a4b3515b4bbbb9828d71e206cc249b67c9142c06239ed3418eff95e2" "fe243221e262fe5144e89bb5025e7848cd9fb857ff5b2d8447d115e58fede8f7" "62408b3adcd05f887b6357e5bd9221652984a389e9b015f87bbc596aba62ba48" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "73fe242ddbaf2b985689e6ec12e29fab2ecd59f765453ad0e93bc502e6e478d6" "3c708b84612872e720796ea1b069cf3c8b3e909a2e1da04131f40e307605b7f9" "e16a771a13a202ee6e276d06098bc77f008b73bbac4d526f160faa2d76c1dd0e" "68769179097d800e415631967544f8b2001dae07972939446e21438b1010748c" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "72cc9ae08503b8e977801c6d6ec17043b55313cda34bcf0e6921f2f04cf2da56" "30fe7e72186c728bd7c3e1b8d67bc10b846119c45a0f35c972ed427c45bacc19" "21d9280256d9d3cf79cbcf62c3e7f3f243209e6251b215aede5026e0c5ad853f" "71b172ea4aad108801421cc5251edb6c792f3adbaecfa1c52e94e3d99634dee7" "5e1d1564b6a2435a2054aa345e81c89539a72c4cad8536cfe02583e0b7d5e2fa" "71efabb175ea1cf5c9768f10dad62bb2606f41d110152f4ace675325d28df8bd" "de58ec8c52e1bba7d46f627c57d0f1a364df9b1e92e45156e5d04d3cec2531d6" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" default)))
  '(dabbrev-case-distinction nil)
  '(dabbrev-case-fold-search nil)
  '(dabbrev-case-replace nil)
@@ -54,6 +54,7 @@
  '(ess-language "R" t)
  '(fci-rule-color "#343d46")
  '(find-file-existing-other-name nil)
+ '(flycheck-go-build-install-deps t)
  '(flymake-log-level -1)
  '(flymake-run-in-place nil)
  '(foreground-color "#cccccc")
@@ -63,7 +64,7 @@
  '(gutter-buffers-tab-visible-p nil)
  '(haskell-mode-hook
    (quote
-    (turn-on-haskell-decl-scan turn-on-haskell-doc turn-on-haskell-indentation)) t)
+    (turn-on-haskell-decl-scan turn-on-haskell-doc turn-on-haskell-indentation)))
  '(haskell-program-name "ghci \"+.\"")
  '(highlight-beyond-fill-column-in-modes (quote ("python-mode")))
  '(indent-tabs-mode nil)
@@ -200,4 +201,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#202020" :foreground "#cccccc" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "nil" :family "Source Code Pro")))))
+ '(default ((t (:inherit nil :stipple nil :background nil :foreground nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "adobe" :family "Source Code Pro")))))
