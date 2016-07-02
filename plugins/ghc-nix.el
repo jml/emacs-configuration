@@ -38,9 +38,6 @@
   (let ((default-directory (locate-dominating-file default-directory "shell.nix")))
     (shell-command-to-string (-get-command-for-env default-directory command))))
 
-(locate-dominating-file "/home/jml/src/holborn/holborn-repo/lib/Holborn" "shell.nix")
-(-get-command-for-env "/home/jml/src/holborn/holborn-repo/lib/Holborn" "$(type -p ghc-pkg) list")
-
 (defun -get-command-for-env (directory command)
   "Get the shell command to run COMMAND with correct environment."
   (let ((direnv-directory (locate-dominating-file directory ".envrc")))
@@ -87,4 +84,6 @@ If not a package database, return nil."
 
 
 (provide 'ghc-nix)
+
+;;; (require 'ghc-nix)
 ;;; ghc-nix.el ends here
