@@ -1,2 +1,4 @@
 (req-package go-mode
-  :config (add-hook 'before-save-hook 'gofmt-before-save))
+  :config
+  (progn (add-hook 'before-save-hook 'gofmt-before-save)
+         (add-hook 'go-mode-hook (lambda () (local-set-key (kbd "M-.") #'godef-jump)))))
