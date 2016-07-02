@@ -26,3 +26,6 @@
 (put 'test-case-name 'safe-local-variable 'identity)
 
 (put 'scroll-left 'disabled nil)
+
+;; Disable the damn bell
+(setq ring-bell-function 'ignore)
