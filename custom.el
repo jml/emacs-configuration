@@ -123,6 +123,9 @@
      ("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(package-load-list (quote (all paredit)))
+ '(package-selected-packages
+   (quote
+    (org yaml-mode web-mode toml-mode spacemacs-theme spacegray-theme solarized-theme soft-charcoal-theme smex smartparens smart-mode-line-powerline-theme shakespeare-mode rustfmt req-package python-docstring psci projectile-direnv prodigy pretty-sha-path popwin paredit paradox pallet nyan-mode noctilux-theme nix-mode multiple-cursors markdown-mode magit-gh-pulls intero idle-highlight-mode htmlize helm-projectile helm-nixos-options helm-hoogle helm-git-grep helm-flycheck helm-ag haskell-snippets go-snippets go-projectile flycheck-rust flycheck-pyflakes flycheck-purescript flycheck-haskell flycheck-cask flatui-theme flatland-theme expand-region exec-path-from-shell drag-stuff dockerfile-mode docker dash-at-point clojure-mode cargo)))
  '(paradox-github-token t)
  '(paren-mode (quote paren) nil (paren))
  '(php-mode-speedbar-open nil)
@@ -132,7 +135,9 @@
  '(rst-level-face-base-light 30)
  '(safe-local-variable-values
    (quote
-    ((haskell-process-use-ghci . t)
+    ((flycheck-hlint-language-extensions quote
+                                         ("NoImplicitPrelude"))
+     (haskell-process-use-ghci . t)
      (haskell-indent-spaces . 4)
      (whitespace-style face tabs spaces trailing lines space-before-tab::space newline indentation::space empty space-after-tab::space space-mark tab-mark newline-mark)
      (encoding . utf8)
@@ -144,6 +149,7 @@
  '(scroll-step 0)
  '(scroll-up-aggressively nil)
  '(scrollbars-visible-p nil)
+ '(select-enable-clipboard t)
  '(send-mail-function (quote smtpmail-send-it))
  '(sendmail-program "/usr/bin/msmtp")
  '(sentence-end-double-space nil)
@@ -194,8 +200,7 @@
  '(visible-bell t)
  '(which-function-mode t)
  '(wiki-follow-name-action (quote find-file))
- '(wiki-name-regexp "\\<[A-Z][a-z]+\\([A-Z][a-z]+\\)+\\>")
- '(x-select-enable-clipboard t))
+ '(wiki-name-regexp "\\<[A-Z][a-z]+\\([A-Z][a-z]+\\)+\\>"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
