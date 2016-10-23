@@ -1,5 +1,5 @@
 (source "gnu" "http://elpa.gnu.org/packages/")
-(source "marmalade" "https://marmalade-repo.org/packages/")
+(source "marmalade" "http://marmalade-repo.org/packages/")
 (source "melpa" "http://melpa.milkbox.net/packages/")
 
 (depends-on "async")
@@ -11,6 +11,7 @@
 (depends-on "dash")
 (depends-on "dash-at-point")
 (depends-on "diminish")
+(depends-on "direnv")
 (depends-on "docker")
 (depends-on "docker-tramp")
 (depends-on "dockerfile-mode")
@@ -24,6 +25,7 @@
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
 (depends-on "flycheck-haskell")
+(depends-on "flycheck-package")
 (depends-on "flycheck-purescript")
 (depends-on "flycheck-pyflakes")
 (depends-on "flycheck-rust")

@@ -3,8 +3,10 @@
   :require (haskell-process ghc-nix haskell-style intero)
   :config (progn
             (add-hook 'haskell-mode-hook #'turn-on-haskell-indentation)
-            (add-hook 'haskell-mode-hook #'use-nix-ghc-in-flycheck)
-            (global-intero-mode)
+            ;; intero-mode stupidly slow on Haskell scripts
+            (add-hook 'haskell-mode-hook #'intero-mode)
+;;            (add-hook 'haskell-mode-hook #'use-nix-ghc-in-flycheck)
+;;            (global-intero-mode)
             (flycheck-add-next-checker 'intero
                                        '(warning . haskell-hlint))))
 

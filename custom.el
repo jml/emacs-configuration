@@ -125,7 +125,7 @@
  '(package-load-list (quote (all paredit)))
  '(package-selected-packages
    (quote
-    (org yaml-mode web-mode toml-mode spacemacs-theme spacegray-theme solarized-theme soft-charcoal-theme smex smartparens smart-mode-line-powerline-theme shakespeare-mode rustfmt req-package python-docstring psci projectile-direnv prodigy pretty-sha-path popwin paredit paradox pallet nyan-mode noctilux-theme nix-mode multiple-cursors markdown-mode magit-gh-pulls intero idle-highlight-mode htmlize helm-projectile helm-nixos-options helm-hoogle helm-git-grep helm-flycheck helm-ag haskell-snippets go-snippets go-projectile flycheck-rust flycheck-pyflakes flycheck-purescript flycheck-haskell flycheck-cask flatui-theme flatland-theme expand-region exec-path-from-shell drag-stuff dockerfile-mode docker dash-at-point clojure-mode cargo)))
+    (direnv flycheck-package org yaml-mode web-mode toml-mode spacemacs-theme spacegray-theme solarized-theme soft-charcoal-theme smex smartparens smart-mode-line-powerline-theme shakespeare-mode rustfmt req-package python-docstring psci projectile-direnv prodigy pretty-sha-path popwin paredit paradox pallet nyan-mode noctilux-theme nix-mode multiple-cursors markdown-mode magit-gh-pulls intero idle-highlight-mode htmlize helm-projectile helm-nixos-options helm-hoogle helm-git-grep helm-flycheck helm-ag haskell-snippets go-snippets go-projectile flycheck-rust flycheck-pyflakes flycheck-purescript flycheck-haskell flycheck-cask flatui-theme flatland-theme expand-region exec-path-from-shell drag-stuff dockerfile-mode docker dash-at-point clojure-mode cargo)))
  '(paradox-github-token t)
  '(paren-mode (quote paren) nil (paren))
  '(php-mode-speedbar-open nil)
