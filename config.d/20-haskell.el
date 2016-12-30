@@ -13,6 +13,4 @@
 
 ;; See also (add-hook 'haskell-mode-hook #'haskell-style) for switching on johanTibell style
 
-;; TODO: hlint set up
 ;; TODO: hindent set up
-;; TODO: intero (c.f. tom)

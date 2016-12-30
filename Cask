@@ -2,9 +2,11 @@
 (source "marmalade" "http://marmalade-repo.org/packages/")
 (source "melpa" "http://melpa.milkbox.net/packages/")
 
+(depends-on "achievements")
 (depends-on "ag")
 (depends-on "async")
 (depends-on "bind-key")
+(depends-on "blackboard-theme")
 (depends-on "cargo")
 (depends-on "cask")
 (depends-on "clojure-mode")
