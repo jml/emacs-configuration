@@ -27,6 +27,7 @@
 (depends-on "flatui-theme")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "flycheck-gometalinter")
 (depends-on "flycheck-haskell")
 (depends-on "flycheck-package")
 (depends-on "flycheck-purescript")
