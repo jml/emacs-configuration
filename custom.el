@@ -168,7 +168,7 @@
  '(sql-pop-to-buffer-after-send-region t)
  '(tab-width 4)
  '(tex-shell-file-name nil)
- '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(text-mode-hook (quote (text-mode-hook-identify)))
  '(tool-bar-mode nil nil (tool-bar))
  '(toolbar-visible-p nil)
  '(track-eol t)
