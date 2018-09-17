@@ -30,6 +30,7 @@
  '(bbdb-default-country "UK")
  '(bbdb-north-american-phone-numbers-p nil)
  '(blink-cursor-mode nil)
+ '(browse-url-browser-function (quote browse-url-default-macosx-browser))
  '(c-default-style "java")
  '(case-fold-search t)
  '(column-number-mode t)

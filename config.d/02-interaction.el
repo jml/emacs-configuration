@@ -7,13 +7,6 @@
 ;; Fill width
 (setq-default fill-column 78)
 
-;; I don't use Firefox, I use Chrome.
-
-;; TODO: Make this work correctly on OS X, which doesn't have a google-chrome
-;; binary.
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "google-chrome")
-
 (put 'narrow-to-region 'disabled nil)
 
 ;; Load dired-x.
