@@ -8,7 +8,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(require 'cask "Cask")
+(require 'cask "~/.cask/cask.el")
 (cask-initialize)
 (pallet-mode t)
 (require 'req-package)
