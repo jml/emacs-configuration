@@ -1,5 +1,5 @@
-(source "gnu" "https://elpa.gnu.org/packages/")
-(source "melpa" "https://melpa.org/packages/")
+(source gnu)
+(source melpa)
 
 (depends-on "a")
 (depends-on "achievements")
@@ -99,6 +99,7 @@
 (depends-on "paredit")
 (depends-on "pcache")
 (depends-on "pcre2el")
+(depends-on "pipenv")
 (depends-on "pkg-info")
 (depends-on "popup")
 (depends-on "popwin")
@@ -140,3 +141,4 @@
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "yasnippet-snippets")
+(depends-on "zenburn-theme")
