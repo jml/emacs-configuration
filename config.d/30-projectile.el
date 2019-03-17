@@ -4,4 +4,5 @@
          ("C-c p" . projectile-command-map))
   :config (progn
             (projectile-global-mode)
-            (helm-projectile-on)))
+            (helm-projectile-on)
+            (setq projectile-use-git-grep 1)))
